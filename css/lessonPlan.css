@@ -1,81 +1,107 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
 
 
-  
-   .navbar {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 20px !important;
+
+.navbar {
+  background-color: white;
+  /* Background color set to white */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: mediumseagreen;
+  /* Text color for the heading */
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  /* Color for nav links */
+  font-size: 1.1rem;
+  padding-right: 20px;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: mediumseagreen;
+  /* Hover color for nav links */
+}
+
+/* Hamburger Icon Styling */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="black" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+/* Responsive font adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
   }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li {
-    font-size: 1.1em;
-    list-style: none;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
+
+  .navbar-nav .nav-link {
     color: black;
-    transition: color 0.3s ease;
-    margin-right: 30px;
+    /* Ensure nav links remain black in the mobile menu */
   }
-  .nav-links  #aboutlink{
-    margin-right: 60px;
-  }
-  .nav-links a:hover {
+
+  .navbar-nav .nav-link:hover {
     color: mediumseagreen;
+    /* Hover effect in the mobile menu */
   }
-  .logo {
-    font-size: 1.5em;
-    color: mediumseagreen; 
-    font-weight: bold;
-    margin-left: 35px;
-  }
-  .heading {
-    color: #4CAF50; /* Green color */
-    font-size: 3.5rem; /* Adjusted to match image height */
-    font-weight: bold;
-  }
-  .img-small {
-    max-height: 9rem; /* Match height with the heading */
-  }
-  .content {
-    display: flex;
-    align-items: center; /* Ensures both the image and heading are vertically aligned */
-  }
-
-
-
-
-  .heading-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
+
+.heading {
+  color: #4CAF50;
+  /* Green color */
+  font-size: 3.5rem;
+  /* Adjusted to match image height */
+  font-weight: bold;
+}
+
+.img-small {
+  max-height: 9rem;
+  /* Match height with the heading */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  /* Ensures both the image and heading are vertically aligned */
+}
+
+
+
+
+.heading-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .heading-section img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
+
 #details-section h4 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
+
 .duration {
-    color: #6c757d;
-    font-size: 14px;
+  color: #6c757d;
+  font-size: 14px;
 }
 
 /* #str{
@@ -85,7 +111,8 @@
 
 
 /* Container Styling */
-#container, #details-section {
+#container,
+#details-section {
   margin: 0 auto;
   padding: 20px;
   max-width: 1200px;
@@ -95,13 +122,16 @@
 }
 
 /* General Text Styling */
-h2, h4, #str {
+h2,
+h4,
+#str {
   font-family: 'Poppins', sans-serif;
   color: #2c3e50;
   font-weight: 500;
 }
 
-p, ul {
+p,
+ul {
   font-family: 'Roboto', sans-serif;
   color: #34495e;
   line-height: 1.6;
@@ -119,7 +149,8 @@ h2 {
   margin-bottom: 20px;
 }
 
-h4, #str {
+h4,
+#str {
   font-size: 1.3rem;
   color: #2980b9;
   margin-top: 20px;
@@ -144,7 +175,8 @@ img {
 }
 
 /* Motivation and Methodology Section Styling */
-#motivationShow, #methodologyShow {
+#motivationShow,
+#methodologyShow {
   background-color: #ecf0f1;
   padding: 15px;
   border-left: 4px solid #27ae60;
@@ -161,14 +193,14 @@ img {
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
-      padding: 10px;
+    padding: 10px;
   }
-  
+
   h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   h4 {
-      font-size: 1.1rem;
+    font-size: 1.1rem;
   }
 }

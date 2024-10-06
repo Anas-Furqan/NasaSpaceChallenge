@@ -243,7 +243,7 @@ var card = cardsData.find(function (c) {
     return c.id == cardId;
 });
 
-var logo = document.getElementsByClassName('logo')[0];
+var logo = document.getElementsByClassName('navbar-brand')[0];
 var hover = document.getElementsByTagName("a");
 // Display card details
 var image = document.getElementsByClassName('image-area')[0];

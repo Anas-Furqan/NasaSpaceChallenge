@@ -1,126 +1,157 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
 
 
-  
-   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    /* background-color: #f0f0f0; */
+
+.navbar {
+  background-color: white;
+  /* Background color set to white */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: mediumseagreen;
+  /* Text color for the heading */
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  /* Color for nav links */
+  font-size: 1.1rem;
+  padding-right: 20px;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: mediumseagreen;
+  /* Hover color for nav links */
+}
+
+/* Hamburger Icon Styling */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="black" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+/* Responsive font adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
   }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li {
-    font-size: 1.1em;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
+
+  .navbar-nav .nav-link {
     color: black;
-    transition: color 0.3s ease;
-    margin-right: 30px;
+    /* Ensure nav links remain black in the mobile menu */
   }
-  .nav-links  #aboutlink{
-    margin-right: 60px;
-  }
-  .nav-links a:hover {
+
+  .navbar-nav .nav-link:hover {
     color: mediumseagreen;
+    /* Hover effect in the mobile menu */
   }
-  .logo {
-    font-size: 1.5em;
-    color: mediumseagreen; 
-    font-weight: bold;
-    margin-left: 35px;
-  }
+}
 
 
-  .circular-image {
-    width: 100%; /* Make it responsive */
-    height: auto;
-    border-radius: 50%; /* Make the image circular */
-    border: 5px solid #4CAF50; /* Optional: Add border color */
-    object-fit: cover; /* Ensure the image covers the entire circle */
+.circular-image {
+  width: 100%;
+  /* Make it responsive */
+  height: auto;
+  border-radius: 50%;
+  /* Make the image circular */
+  border: 5px solid #4CAF50;
+  /* Optional: Add border color */
+  object-fit: cover;
+  /* Ensure the image covers the entire circle */
 }
 
 .about-section {
-    margin-top: 50px; /* Add some spacing at the top */
+  margin-top: 50px;
+  /* Add some spacing at the top */
 }
 
 .about-title {
-    font-size: 2.5rem; /* Adjust heading size */
-    color: #4CAF50; /* Heading color */
-    font-weight: bold; /* Make the heading bold */
+  font-size: 2.5rem;
+  /* Adjust heading size */
+  color: #4CAF50;
+  /* Heading color */
+  font-weight: bold;
+  /* Make the heading bold */
 }
 
 .about-text {
-    font-size: 1.2rem; /* Adjust text size */
-    color: #555; /* Text color */
+  font-size: 1.2rem;
+  /* Adjust text size */
+  color: #555;
+  /* Text color */
 }
 
 .desc {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
 }
 
 
 .team-section {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .team-heading {
-    font-size: 2.5rem;
-    color: #FD9D24; /* Heading color */
-    text-align: center;
-    margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #FD9D24;
+  /* Heading color */
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .team-member {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .team-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Make images circular */
-    object-fit: cover;
-    margin-bottom: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* Make images circular */
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
 .team-name {
-    font-size: 1.5rem;
-    color: #4CAF50; /* Name color */
-    margin-bottom: 5px;
+  font-size: 1.5rem;
+  color: #4CAF50;
+  /* Name color */
+  margin-bottom: 5px;
 }
 
 .team-role {
-    font-size: 1.2rem;
-    color: #FD9D24; /* Role color */
-    margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #FD9D24;
+  /* Role color */
+  margin-bottom: 15px;
 }
 
 .social-icons a {
-    margin: 0 10px;
-    font-size: 1.5rem;
-    color: #555;
-    transition: color 0.3s;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #555;
+  transition: color 0.3s;
 }
 
 .social-icons a:hover {
-    color: #4CAF50; /* Hover color for social icons */
+  color: #4CAF50;
+  /* Hover color for social icons */
 }

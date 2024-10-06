@@ -1,0 +1,147 @@
+body {
+
+    color: #333;
+}
+
+/* .navbar {
+    background-color: #d71921;
+} */
+
+.navbar {
+    background-color: white;
+    /* Background color set to white */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: mediumseagreen;
+    /* Text color for the heading */
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    /* Color for nav links */
+    font-size: 1.1rem;
+    padding-right: 20px;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: mediumseagreen;
+    /* Hover color for nav links */
+}
+
+/* Hamburger Icon Styling */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="black" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+/* Responsive font adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        color: black;
+        /* Ensure nav links remain black in the mobile menu */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: mediumseagreen;
+        /* Hover effect in the mobile menu */
+    }
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.subheading {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.details-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.details-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hoverText {
+    color: black;
+    /* Initial text color */
+    transition: color 0.3s ease;
+    /* Smooth transition effect */
+}
+
+
+/* Footer Styling */
+footer {
+background-color: mediumseagreen;
+color: #fff;
+padding: 40px 0;
+}
+
+footer a {
+color: white; /* Link color */
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+footer a:hover {
+color: #FD9D24; /* Hover color for links */
+}
+
+.footer-section h5 {
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 20px;
+color: black;
+}
+
+.footer-section p,
+.footer-section ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.footer-section ul li {
+margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+font-size: 0.95rem;
+}
+
+.copyright {
+text-align: center;
+margin-top: 30px;
+border-top: 1px solid #666;
+padding-top: 20px;
+font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+.footer-section {
+text-align: center;
+margin-bottom: 20px;
+}
+}
