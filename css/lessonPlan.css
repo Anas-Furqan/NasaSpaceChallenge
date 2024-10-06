@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+
+  
+   .navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 20px !important;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    font-size: 1.1em;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    margin-right: 30px;
+  }
+  .nav-links  #aboutlink{
+    margin-right: 60px;
+  }
+  .nav-links a:hover {
+    color: mediumseagreen;
+  }
+  .logo {
+    font-size: 1.5em;
+    color: mediumseagreen; 
+    font-weight: bold;
+    margin-left: 35px;
+  }
+  .heading {
+    color: #4CAF50; /* Green color */
+    font-size: 3.5rem; /* Adjusted to match image height */
+    font-weight: bold;
+  }
+  .img-small {
+    max-height: 9rem; /* Match height with the heading */
+  }
+  .content {
+    display: flex;
+    align-items: center; /* Ensures both the image and heading are vertically aligned */
+  }
+
+
+
+
+  .heading-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading-section img {
+    max-width: 100%;
+    height: auto;
+}
+#details-section h4 {
+    margin-top: 20px;
+}
+.duration {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* #str{
+  font-size: 1.5rem; font-weight: 500;
+} */
+
+
+
+/* Container Styling */
+#container, #details-section {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General Text Styling */
+h2, h4, #str {
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+p, ul {
+  font-family: 'Roboto', sans-serif;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Headings Styling */
+h2 {
+  font-size: 2rem;
+  border-left: 5px solid #27ae60;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+h4, #str {
+  font-size: 1.3rem;
+  color: #2980b9;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* List Styling */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+/* Image Styling */
+img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Motivation and Methodology Section Styling */
+#motivationShow, #methodologyShow {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-left: 4px solid #27ae60;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Highlight the duration */
+.duration {
+  font-weight: 500;
+  color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+  
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  h4 {
+      font-size: 1.1rem;
+  }
+}

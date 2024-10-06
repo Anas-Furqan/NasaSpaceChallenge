@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+
+  
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: #f0f0f0; */
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    font-size: 1.1em;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    margin-right: 30px;
+  }
+  .nav-links  #aboutlink{
+    margin-right: 60px;
+  }
+  .nav-links a:hover {
+    color: mediumseagreen;
+  }
+  .logo {
+    font-size: 1.5em;
+    color: mediumseagreen; 
+    font-weight: bold;
+    margin-left: 35px;
+  }
+
+
+  .circular-image {
+    width: 100%; /* Make it responsive */
+    height: auto;
+    border-radius: 50%; /* Make the image circular */
+    border: 5px solid #4CAF50; /* Optional: Add border color */
+    object-fit: cover; /* Ensure the image covers the entire circle */
+}
+
+.about-section {
+    margin-top: 50px; /* Add some spacing at the top */
+}
+
+.about-title {
+    font-size: 2.5rem; /* Adjust heading size */
+    color: #4CAF50; /* Heading color */
+    font-weight: bold; /* Make the heading bold */
+}
+
+.about-text {
+    font-size: 1.2rem; /* Adjust text size */
+    color: #555; /* Text color */
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+
+.team-section {
+    margin-top: 50px;
+}
+
+.team-heading {
+    font-size: 2.5rem;
+    color: #FD9D24; /* Heading color */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make images circular */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-name {
+    font-size: 1.5rem;
+    color: #4CAF50; /* Name color */
+    margin-bottom: 5px;
+}
+
+.team-role {
+    font-size: 1.2rem;
+    color: #FD9D24; /* Role color */
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4CAF50; /* Hover color for social icons */
+}

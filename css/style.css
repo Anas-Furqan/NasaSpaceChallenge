@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+
+  /* Navbar Styling */
+  .navbar {
+    background-color: white; /* Background color set to white */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: mediumseagreen; /* Text color for the heading */
+}
+
+.navbar-nav .nav-link {
+    color: black; /* Color for nav links */
+    font-size: 1.1rem;
+    padding-right: 20px;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: mediumseagreen; /* Hover color for nav links */
+}
+
+/* Hamburger Icon Styling */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="black" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+/* Responsive font adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        color: black; /* Ensure nav links remain black in the mobile menu */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: mediumseagreen; /* Hover effect in the mobile menu */
+    }
+}
+  
+  
+
+  /* Carousel */
+/* Owl Carousel Item Styling */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Customizing Owl Carousel navigation buttons */
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent; /* Transparent background */
+  border: none;
+  font-size: 30px; /* Adjust size of the arrows */
+  color: black; /* Arrow color */
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.owl-prev {
+  left: 10px; /* Position to the left */
+}
+
+.owl-next {
+  right: 10px; /* Position to the right */
+}
+
+/* FontAwesome Icons for Arrows */
+.owl-prev::before {
+  font-family: "FontAwesome";
+  content: "\f104"; /* Left arrow icon */
+  color: black;
+}
+
+.owl-next::before {
+  font-family: "FontAwesome";
+  content: "\f105"; /* Right arrow icon */
+  color: black;
+}
+
+/* Hover Effect for Arrows */
+.owl-prev:hover, .owl-next:hover {
+  color: mediumseagreen;
+}
+
+/* Responsive carousel */
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .owl-prev, .owl-next {
+    font-size: 24px; /* Smaller icons for mobile */
+  }
+}
+
+
+
+ /* Container to center everything */
+.content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Heading style */
+.heading {
+  color: #4CAF50; /* Medium green color */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Custom underline with slight gap */
+.heading::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #FFCC80; /* Light orange underline */
+  position: absolute;
+  bottom: -10px; /* Gap between text and underline */
+  left: 0;
+}
+
+/* Paragraph/Description styling */
+.description {
+  color: #333;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+  
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three cards per row by default */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 100px auto; /* Add margin to center the container */
+  justify-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  perspective: 1000px;
+  font-family: Arial, sans-serif;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card-content p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Card Back Styles */
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #f8f9fa;  /* Light background for the back */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;  /* Center the text */
+}
+
+/* Heading Style */
+.card-back h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;  /* Darker color for the heading */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+    /* Green underline for a modern look */
+  padding-bottom: 10px;
+}
+
+/* Details Text */
+.card-back p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #7f8c8d;  /* Lighter color for the text */
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Read More Button */
+.read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.read-more a {
+  color: black;
+  text-decoration: none;
+}
+/* Hover effect for the button */
+.read-more:hover {
+  background-color: #1e8449;  /* Darker green on hover */
+}
+
+
+/* Media queries for responsiveness */
+
+/* Large tablets and small desktops (less than 1024px) */
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  }
+}
+
+/* Tablets and smaller devices (less than 768px) */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+  .card {
+    width: 90%; /* Make cards a little smaller on mobile */
+  }
+}
+
+/* Mobile devices (less than 576px) */
+@media (max-width: 576px) {
+  .card-container {
+    grid-template-columns: 1fr; /* Still one card per row */
+    gap: 15px;
+  }
+  .card {
+    width: 95%; /* Further reduce card size on smaller screens */
+  }
+}
+
+
+
+/* Footer Styling */
+footer {
+  background-color: mediumseagreen;
+  color: #fff;
+  padding: 40px 0;
+}
+
+footer a {
+  color: white; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #FD9D24; /* Hover color for links */
+}
+
+.footer-section h5 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  font-size: 0.95rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #666;
+  padding-top: 20px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}

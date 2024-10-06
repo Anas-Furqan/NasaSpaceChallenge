@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDGs In The Classroom | Details</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+
+            color: #333;
+        }
+
+        /* .navbar {
+            background-color: #d71921;
+        } */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            font-size: 1.1em;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s ease;
+            margin-right: 30px;
+        }
+
+        .nav-links #aboutlink {
+            margin-right: 60px;
+        }
+
+        /* .nav-links a:hover {
+    color: mediumseagreen;
+  } */
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-left: 35px;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .heading {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .subheading {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .details-heading {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .details-text {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .hoverText {
+            color: black;
+            /* Initial text color */
+            transition: color 0.3s ease;
+            /* Smooth transition effect */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">SDGs In The Classroom</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto nav-links">
+                    <li class="nav-item hoverText"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item hoverText"><a class="nav-link" href="../pages/lessonPlan.html">Lesson Plan</a>
+                    </li>
+                    <li class="nav-item hoverText"><a class="nav-link" href="#project-details">Project Details</a></li>
+                    <li class="nav-item hoverText"><a class="nav-link" href="./about.html" id="aboutlink">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Main Content -->
+    <div class="container content" id="details-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-area">
+                    <!-- Image Call -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="heading"> </div>
+                <div class="subheading"> </div>
+                <div class="details-heading">Targets:</div>
+                <ul class="list-unstyled" id="targets">
+
+                </ul>
+                <div class="details-heading">More Details:</div>
+                <div class="details-text">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/details.js"></script>
+</body>
+
+</html>
