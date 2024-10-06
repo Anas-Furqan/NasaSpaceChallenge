@@ -65,7 +65,7 @@ body {
 .heading {
   color: #4CAF50;
   /* Green color */
-  font-size: 3.5rem;
+  font-size: 3rem;
   /* Adjusted to match image height */
   font-weight: bold;
 }
@@ -164,7 +164,7 @@ ul {
 
 ul li {
   margin-bottom: 8px;
-  list-style-type: disc;
+  /* list-style-type: disc;  */
 }
 
 /* Image Styling */
