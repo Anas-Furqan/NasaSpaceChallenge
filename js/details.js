@@ -245,7 +245,6 @@ var card = cardsData.find(function (c) {
 
 var logo = document.getElementsByClassName('navbar-brand')[0];
 var hover = document.getElementsByTagName("a");
-// Display card details
 var image = document.getElementsByClassName('image-area')[0];
 var heading = document.getElementsByClassName('heading')[0];
 var subheading = document.getElementsByClassName('subheading')[0];
