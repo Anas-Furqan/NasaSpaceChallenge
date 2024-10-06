@@ -1,138 +1,91 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
 
 
-  /* Navbar Styling */
-  .navbar {
-    background-color: white; /* Background color set to white */
+/* Navbar Styling */
+.navbar {
+  background-color: white;
+  /* Background color set to white */
 }
 
 .navbar-brand {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: mediumseagreen; /* Text color for the heading */
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: mediumseagreen;
+  /* Text color for the heading */
 }
 
 .navbar-nav .nav-link {
-    color: black; /* Color for nav links */
-    font-size: 1.1rem;
-    padding-right: 20px;
-    margin: 0 20px;
-    transition: color 0.3s ease;
+  color: black;
+  /* Color for nav links */
+  font-size: 1.1rem;
+  padding-right: 20px;
+  margin: 0 20px;
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: mediumseagreen; /* Hover color for nav links */
+  color: mediumseagreen;
+  /* Hover color for nav links */
 }
 
 /* Hamburger Icon Styling */
 .navbar-toggler {
-    border: none;
+  border: none;
 }
 
 .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="black" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="black" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
 }
 
 /* Responsive font adjustments */
 @media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.5rem;
-    }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
 
-    .navbar-nav .nav-link {
-        color: black; /* Ensure nav links remain black in the mobile menu */
-    }
+  .navbar-nav .nav-link {
+    color: black;
+    /* Ensure nav links remain black in the mobile menu */
+  }
 
-    .navbar-nav .nav-link:hover {
-        color: mediumseagreen; /* Hover effect in the mobile menu */
-    }
+  .navbar-nav .nav-link:hover {
+    color: mediumseagreen;
+    /* Hover effect in the mobile menu */
+  }
 }
-  
-  
 
-  /* Carousel */
-/* Owl Carousel Item Styling */
+/* Carousel Styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
+  /* Transparent background */
+  color: green;
+  /* Green icon color */
+  filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(90deg) brightness(80%) contrast(100%);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: transparent;
+  /* Ensure hover background is also transparent */
+}
+
 .carousel-item img {
   width: 100%;
   height: auto;
-  display: block;
-}
-
-.carousel-caption {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-/* Customizing Owl Carousel navigation buttons */
-.owl-prev, .owl-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent; /* Transparent background */
-  border: none;
-  font-size: 30px; /* Adjust size of the arrows */
-  color: black; /* Arrow color */
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.owl-prev {
-  left: 10px; /* Position to the left */
-}
-
-.owl-next {
-  right: 10px; /* Position to the right */
-}
-
-/* FontAwesome Icons for Arrows */
-.owl-prev::before {
-  font-family: "FontAwesome";
-  content: "\f104"; /* Left arrow icon */
-  color: black;
-}
-
-.owl-next::before {
-  font-family: "FontAwesome";
-  content: "\f105"; /* Right arrow icon */
-  color: black;
-}
-
-/* Hover Effect for Arrows */
-.owl-prev:hover, .owl-next:hover {
-  color: mediumseagreen;
-}
-
-/* Responsive carousel */
-@media (max-width: 768px) {
-  .carousel-caption {
-    font-size: 14px;
-    padding: 5px 10px;
-  }
-
-  .owl-prev, .owl-next {
-    font-size: 24px; /* Smaller icons for mobile */
-  }
 }
 
 
 
- /* Container to center everything */
+/* Container to center everything */
 .content {
   text-align: center;
   margin-top: 40px;
@@ -140,7 +93,8 @@
 
 /* Heading style */
 .heading {
-  color: #4CAF50; /* Medium green color */
+  color: #4CAF50;
+  /* Medium green color */
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -154,9 +108,11 @@
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #FFCC80; /* Light orange underline */
+  background-color: #FFCC80;
+  /* Light orange underline */
   position: absolute;
-  bottom: -10px; /* Gap between text and underline */
+  bottom: -10px;
+  /* Gap between text and underline */
   left: 0;
 }
 
@@ -170,15 +126,17 @@
   text-align: center;
 }
 
-  
+
 
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three cards per row by default */
+  grid-template-columns: repeat(3, 1fr);
+  /* Three cards per row by default */
   gap: 20px;
   max-width: 1200px;
-  margin: 100px auto; /* Add margin to center the container */
+  margin: 100px auto;
+  /* Add margin to center the container */
   justify-items: center;
 }
 
@@ -201,7 +159,8 @@
   transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -244,7 +203,8 @@
 /* Card Back Styles */
 .card-back {
   transform: rotateY(180deg);
-  background-color: #f8f9fa;  /* Light background for the back */
+  background-color: #f8f9fa;
+  /* Light background for the back */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -252,16 +212,18 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  text-align: center;  /* Center the text */
+  text-align: center;
+  /* Center the text */
 }
 
 /* Heading Style */
 .card-back h3 {
   font-family: 'Poppins', sans-serif;
-  color: #2c3e50;  /* Darker color for the heading */
+  color: #2c3e50;
+  /* Darker color for the heading */
   font-size: 1.8rem;
   margin-bottom: 15px;
-    /* Green underline for a modern look */
+  /* Green underline for a modern look */
   padding-bottom: 10px;
 }
 
@@ -269,7 +231,8 @@
 .card-back p {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  color: #7f8c8d;  /* Lighter color for the text */
+  color: #7f8c8d;
+  /* Lighter color for the text */
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -287,13 +250,16 @@
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
+
 .read-more a {
   color: black;
   text-decoration: none;
 }
+
 /* Hover effect for the button */
 .read-more:hover {
-  background-color: #1e8449;  /* Darker green on hover */
+  background-color: #1e8449;
+  /* Darker green on hover */
 }
 
 
@@ -302,28 +268,39 @@
 /* Large tablets and small desktops (less than 1024px) */
 @media (max-width: 1024px) {
   .card-container {
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    grid-template-columns: repeat(2, 1fr);
+    /* Two cards per row */
   }
 }
 
 /* Tablets and smaller devices (less than 768px) */
 @media (max-width: 768px) {
   .card-container {
-    grid-template-columns: 1fr; /* One card per row */
+    grid-template-columns: 1fr;
+    /* One card per row */
   }
+
   .card {
-    width: 90%; /* Make cards a little smaller on mobile */
+    width: 90%;
+    /* Make cards a little smaller on mobile */
   }
 }
 
 /* Mobile devices (less than 576px) */
 @media (max-width: 576px) {
   .card-container {
-    grid-template-columns: 1fr; /* Still one card per row */
+    grid-template-columns: 1fr;
+    /* Still one card per row */
     gap: 15px;
   }
+
   .card {
-    width: 95%; /* Further reduce card size on smaller screens */
+    width: 95%;
+    height: 470px;
+    /* Further reduce card size on smaller screens */
+  }
+  .card-image{
+    height: 330px;
   }
 }
 
@@ -337,13 +314,15 @@ footer {
 }
 
 footer a {
-  color: white; /* Link color */
+  color: white;
+  /* Link color */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #FD9D24; /* Hover color for links */
+  color: #FD9D24;
+  /* Hover color for links */
 }
 
 .footer-section h5 {
@@ -376,7 +355,7 @@ footer a:hover {
 
 @media (max-width: 768px) {
   .footer-section {
-      text-align: center;
-      margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
