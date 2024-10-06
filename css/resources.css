@@ -104,7 +104,8 @@ footer a {
 }
 
 footer a:hover {
-    color: #FD9D24; /* Hover color for links */
+    color: #FD9D24;
+    text-decoration: none; /* Hover color for links */
 }
 
 .footer-section h5 {
