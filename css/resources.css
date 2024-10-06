@@ -44,6 +44,52 @@
     }
 }
 
+
+.heading {
+    color: #FD9D24;
+    margin-bottom: 20px;
+}
+.subheading {
+    color: mediumseagreen;
+    margin-top: 40px;
+}
+.map-name {
+    color: #FD9D24;
+    margin-bottom: 10px;
+}
+#map1, #map2, #map3 {
+    width: 100%;
+    height: 400px; /* Set a normal height for the map */
+    border: 1px solid #ccc;
+}
+.key-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+
+
+ /* Custom styles */
+ .image-gallery {
+    margin-top: 30px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
+}
+
+/* Center the single image in the last row */
+.single-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* Footer Styling */
 footer {
     background-color: mediumseagreen;
@@ -62,9 +108,11 @@ footer a:hover {
 }
 
 .footer-section h5 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 20px;
-}
+    color: black;
+  }
 
 .footer-section p,
 .footer-section ul {

@@ -326,8 +326,10 @@ footer a:hover {
 }
 
 .footer-section h5 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 20px;
+  color: black;
 }
 
 .footer-section p,

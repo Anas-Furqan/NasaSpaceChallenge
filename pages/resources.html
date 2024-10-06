@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
+    <title>Resources | SDGs In The Classroom</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
  <link rel="stylesheet" href="../css/resources.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@7.2.2/ol.css" type="text/css">
+ <script src="https://cdn.jsdelivr.net/npm/ol@7.2.2/dist/ol.js"></script>
 </head>
 <body>
 
@@ -34,6 +36,179 @@
     </div>
 </nav>
 
+<hr>
+<div class="container mt-5">
+    <!-- Resources Heading -->
+    <h1 class="heading">Resources</h1>
+    <p>These Resources can be used by the teachers while teaching Urbanization focusing on the SDG 11.</p>
+
+    <!-- SEDAC Heading -->
+    <h2 class="subheading text-center">SEDAC</h2>
+ <br>
+    <div class="row">
+        <!-- Column for Map (col-md-9) -->
+        <div class="col-md-9">
+            <h4 class="map-name">UN Adjusted Population Count (2020)</h4>
+            <div id="map1"></div>
+        </div>
+
+        <!-- Column for Key Image (col-md-3) -->
+        <div class="col-md-3">
+            <h4 class="map-name">Map Key</h4>
+            <img src="../images/mapkey2.jfif" alt="Map Key" class="key-image"> <!-- Insert your key image link -->
+        </div>
+    </div>
+    <br> <hr>
+    <div class="row">
+        <!-- Column for Map (col-md-9) -->
+        <div class="col-md-9">
+            <h4 class="map-name">Population Density (2020)</h4>
+            <div id="map2"></div>
+        </div>
+
+        <!-- Column for Key Image (col-md-3) -->
+        <div class="col-md-3">
+            <h4 class="map-name">Map Key</h4>
+            <img src="../images/mapkey1.jfif" alt="Map Key" class="key-image"> <!-- Insert your key image link -->
+        </div>
+    </div>
+ <br> <hr>
+    <div class="row">
+        <!-- Column for Map (col-md-9) -->
+        <div class="col-md-9">
+            <h4 class="map-name">Global Grid of Probabilities of Urban Expansion to 2030</h4>
+            <div id="map3"></div>
+        </div>
+
+        <!-- Column for Key Image (col-md-3) -->
+        <div class="col-md-3">
+            <h4 class="map-name">Map Key</h4>
+            <img src="../images/mapkey3.jfif" alt="Map Key" class="key-image"> <!-- Insert your key image link -->
+        </div>
+    </div>
+</div>
+
+<script>
+    // Initialize the map with OpenLayers 6+
+    window.onload = function() {
+          // Initialize the map
+          const map1 = new ol.Map({
+              target: 'map1',
+              layers: [
+                  // Base OSM Layer
+                  new ol.layer.Tile({
+                      source: new ol.source.OSM()  // OpenStreetMap base layer
+                  }),
+                  
+                  // WMS Layer for Population Density
+                  new ol.layer.Tile({
+                      source: new ol.source.TileWMS({
+                          url: 'https://sedac.ciesin.columbia.edu/geoserver/wms',
+                          params: {
+                              'LAYERS': 'gpw-v4:gpw-v4-population-count-adjusted-to-2015-unwpp-country-totals-rev11_2020',
+                              'TILED': true
+                          },
+                          serverType: 'geoserver',
+                          transition: 0
+                      })
+                  })
+              ],
+              view: new ol.View({
+                  center: ol.proj.fromLonLat([0, 0]),  // Center of the map [Longitude, Latitude]
+                  zoom: 2
+              })
+          });
+
+          const map2 = new ol.Map({
+              target: 'map2',
+              layers: [
+                  // Base OSM Layer
+                  new ol.layer.Tile({
+                      source: new ol.source.OSM()  // OpenStreetMap base layer
+                  }),
+                  
+                  // WMS Layer for Population Density
+                  new ol.layer.Tile({
+                      source: new ol.source.TileWMS({
+                          url: 'https://sedac.ciesin.columbia.edu/geoserver/wms',
+                          params: {
+                              'LAYERS': 'gpw-v4:gpw-v4-population-density-rev11_2020',
+                              'TILED': true
+                          },
+                          serverType: 'geoserver',
+                          transition: 0
+                      })
+                  })
+              ],
+              view: new ol.View({
+                  center: ol.proj.fromLonLat([0, 0]),  // Center of the map [Longitude, Latitude]
+                  zoom: 2
+              })
+          });
+
+          const map3 = new ol.Map({
+              target: 'map3',
+              layers: [
+                  // Base OSM Layer
+                  new ol.layer.Tile({
+                      source: new ol.source.OSM()  // OpenStreetMap base layer
+                  }),
+                  
+                  // WMS Layer for Population Density
+                  new ol.layer.Tile({
+                      source: new ol.source.TileWMS({
+                          url: 'https://sedac.ciesin.columbia.edu/geoserver/wms',
+                          params: {
+                              'LAYERS': 'lulc:lulc-global-grid-prob-urban-expansion-2030',
+                              'TILED': true
+                          },
+                          serverType: 'geoserver',
+                          transition: 0
+                      })
+                  })
+              ],
+              view: new ol.View({
+                  center: ol.proj.fromLonLat([0, 0]),  // Center of the map [Longitude, Latitude]
+                  zoom: 2
+              })
+          });
+      };
+</script>
+
+
+<br> <hr>
+
+<h2 class="subheading text-center">Static Maps</h2>
+<br>
+
+<div class="container image-gallery">
+    <div class="row">
+        <!-- Column 1: First 3 images -->
+        <div class="col-md-4 col-sm-12 mb-4">
+            <img src="../Graphs/asia-population-density.png" alt="Image 1">
+        </div>
+        <div class="col-md-4 col-sm-12 mb-4">
+            <img src="../Graphs/asiaextents.png" alt="Image 2">
+        </div>
+        <div class="col-md-4 col-sm-12 mb-4">
+            <img src="../Graphs/asiapoints.png" alt="Image 3">
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Column 2: Next 3 images -->
+        <div class="col-md-4 col-sm-12 mb-4">
+            <img src="../Graphs/pakpoints.png" alt="Image 4">
+        </div>
+        <div class="col-md-4 col-sm-12 mb-4">
+            <img src="../Graphs/pakdens.png" alt="Image 5">
+        </div>
+        <div class="col-md-4 col-sm-12 mb-4">
+            <img src="../Graphs/pakextents.png" alt="Image 6">
+        </div>
+    </div>
+
+</div>
 
 
 <footer>
@@ -77,6 +252,8 @@
         </div>
     </div>
 </footer>
+
+
 
 
 <!-- Bootstrap JS -->
